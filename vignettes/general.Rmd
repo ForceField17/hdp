@@ -77,7 +77,7 @@ with psuedocount 1 in each data category.
 
 ```{r quick_init}
 set.seed(10)
-quick_hdp <- hdp_quick_init(example_data_hdp)
+quick_hdp <- hdp_quick_init(as.data.frame(example_data_hdp))
 quick_hdp
 ```
 
