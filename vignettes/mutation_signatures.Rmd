@@ -270,9 +270,9 @@ luad_prior <- hdp_adddp(luad_prior,
                         ppindex = c(1, rep(1+nps+1, 100)),
                         cpindex = c(3, rep(4, 100)))
 
-my_mutcount <- as.data.frame(mut_count)[1:100,]
+my_mutcount <- as.data.frame(as.data.frame(mut_count)[1:100,])
 luad_prior <- hdp_setdata(luad_prior,
-                          dpindex = (1+nps+1)+1:100,
+                          dpindex = (3+nps):(100+nps),
                           my_mutcount)
 
 luad_prior
