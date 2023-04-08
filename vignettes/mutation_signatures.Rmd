@@ -272,7 +272,7 @@ luad_prior <- hdp_adddp(luad_prior,
 
 luad_prior <- hdp_setdata(luad_prior,
                           dpindex = (1+nps+1)+1:100,
-                          mut_count[1:100,])
+                          as.data.frame(mut_count[1:100,]))
 
 luad_prior
 ```
